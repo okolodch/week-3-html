@@ -45,10 +45,13 @@ animation: slide-from-left 2s ease-in-out forwards;
     cursor: pointer;
 }
 .movie-poster-container img:hover{
-    transform: scale(1.5);
-    animation-delay: 0,5s;
-    box-shadow: 8px 8px 8px -4px rgb(66, 66, 123);
+    
+    /* transform: scale(1.5);
+    animation-delay: 0,5s; */
+    
+    
   }
+  
   .movie-genres {
     margin-top: 1.2rem;
   }
@@ -144,5 +147,57 @@ footer ul li a {
     text-transform: uppercase;
     text-decoration: none;
     color: #777;
+    
+}
+.modal{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(10, 7, 53, 0.959);
+    z-index: 3;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+
+
+}
+
+.modal-content{
+
+    background-color: rgba(14, 24, 97, 0.559) ;
+    border-radius:5rem;
+    margin: 10% auto;
+    padding: 2rem;
+    width: 700px;
+    height: 700px;
+    animation: zoom-in 1s;
+    color: rgba(255, 255, 255, 0.56);
+}
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn{
+    float: right;
+    cursor: pointer;
+    font-size: 4rem ;
+   
+}
+.closeBtn:hover{
+    box-shadow:5px 5px 5px rgba(145, 14, 14, 0.579);
+    transform: scale(1.5);
+    animation-delay: 0,5s;
+    border-radius: 20px;
+}
+.movie-poster-modal{
+    width: 300px;
+}
+.movie-poster-image{
+    width: 300px;
+    cursor: pointer;
+    
     
 }
