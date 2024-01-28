@@ -9,10 +9,8 @@ let modalImage = document.querySelector(".movie-poster-modal");
 
 
 moviePoster.addEventListener('click', ()=> {
-    
     modal.style.display = 'block';
     modalImage.src = moviePoster.src;
-
 }) ;
 
 closeBtn.addEventListener('click', () => {
@@ -24,5 +22,4 @@ window.addEventListener('click', (event) => {
     if(event.target === modal) {
         modal.style.display = 'none';
     }
-
 })
